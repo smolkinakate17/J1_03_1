@@ -1,10 +1,7 @@
 package main;
 
 import java.time.*;
-import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalQueries;
-import java.util.Calendar;
-import java.util.Date;
+
 
 public class MonthInfo {
     private LocalDate localDate = LocalDate.now();
@@ -123,7 +120,7 @@ public class MonthInfo {
             }
 
         }
-        while (first.isBefore(second)|| first.isEqual(second));
+        while (first.isBefore(second) || first.isEqual(second));
         return count;
     }
 }
